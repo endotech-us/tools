@@ -82,11 +82,15 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
+export CLOUDSDK_CORE_DISABLE_PROMPTS=1
+export PATH=${PATH}:${HOME}/google-cloud-sdk/bin
+export GAE_PYTHONPATH=${HOME}/google_appengine
+export PYTHONPATH=${PYTHONPATH}:${GAE_PYTHONPATH}
+
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
-
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
@@ -97,9 +101,3 @@ fi
 #if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 #    . /etc/bash_completion
 #fi
-
-
-export CLOUDSDK_CORE_DISABLE_PROMPTS=1
-export PATH=${PATH}:${HOME}/google-cloud-sdk/bin
-GAE_PYTHONPATH=${HOME}/google_appengine
-export PYTHONPATH=${PYTHONPATH}:${GAE_PYTHONPATH}
