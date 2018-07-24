@@ -82,13 +82,6 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
-export TESTZZ=bollocks
-
-export CLOUDSDK_CORE_DISABLE_PROMPTS=1
-export PATH=${PATH}:${HOME}/google-cloud-sdk/bin
-export GAE_PYTHONPATH=${HOME}/google_appengine
-export PYTHONPATH=${PYTHONPATH}:${GAE_PYTHONPATH}
-
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
@@ -97,9 +90,7 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-# enable programmable completion features (you don't need to enable
-# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
-# sources /etc/bash.bashrc).
-#if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
-#    . /etc/bash_completion
-#fi
+export CLOUDSDK_CORE_DISABLE_PROMPTS=1
+export PATH=${PATH}:${HOME}/google-cloud-sdk/bin
+export GAE_PYTHONPATH=${HOME}/google_appengine
+export PYTHONPATH=${PYTHONPATH}:${GAE_PYTHONPATH}
