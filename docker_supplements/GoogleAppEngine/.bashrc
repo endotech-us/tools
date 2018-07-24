@@ -82,6 +82,8 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
+export TESTZZ=bollocks
+
 export CLOUDSDK_CORE_DISABLE_PROMPTS=1
 export PATH=${PATH}:${HOME}/google-cloud-sdk/bin
 export GAE_PYTHONPATH=${HOME}/google_appengine
